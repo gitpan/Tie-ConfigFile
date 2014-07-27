@@ -14,7 +14,7 @@ use warnings;
 use IO::File;
 use Carp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub __error {
     my($self, $err) = @_;
@@ -106,7 +106,7 @@ sub FETCH {
 
     my $val = $self->{_cache}->{$key};
 
-    return if ($val eq '') && $self->{empty_is_undef};
+    return if defined($val) && ($val eq '') && $self->{empty_is_undef};
     return $val;
 }
 

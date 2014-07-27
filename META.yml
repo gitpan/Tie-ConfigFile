@@ -1,15 +1,25 @@
---- #YAML:1.0
-name:                Tie-ConfigFile
-version:             0.01
-abstract:            Tie configuration file to a hash
-license:             ~
-author:              
-    - Tomasz Konojacki <me@xenu.tk>
-generated_by:        ExtUtils::MakeMaker version 6.42
-distribution_type:   module
-requires:     
-    File::Temp:                    0
-    IO::File:                      0
+---
+abstract: 'Tie configuration file to a hash'
+author:
+  - 'Tomasz Konojacki <me@xenu.tk>'
+build_requires:
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
+license: unknown
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
-    version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Tie-ConfigFile
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  File::Temp: 0
+  IO::File: 0
+resources:
+  repository: http://code.xenu.tk/repos.cgi/tie-configfile
+version: 0.02
